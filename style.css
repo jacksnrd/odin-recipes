@@ -7,21 +7,28 @@ html {
 }
 
 #logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
 .heading {
+  font-family: cursive, sans-serif;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.heading,
+.recipe-title {
   text-align: center;
-  font-size: 40px;
 }
 
 div img {
   width: 350px;
   height: 400px;
+  border-radius: 5px;
 }
 
 .item {
@@ -33,6 +40,7 @@ div img {
 .item img:hover {
   transform: scale(1.05);
   transition:ease-in-out;
+  border-radius: 10px;
 }
 
 .content {
@@ -40,4 +48,27 @@ div img {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+}
+
+.left,
+.right {
+  gap: 20px;
+
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients-container {
+  background-color: #F2EBD5;
+}
+
+.back-to-menu-link {
+  text-align: center;
 }
