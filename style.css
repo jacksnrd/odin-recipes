@@ -21,7 +21,8 @@ html {
 }
 
 .heading,
-.recipe-title {
+.recipe-title,
+.back-to-menu-link {
   text-align: center;
 }
 
@@ -55,11 +56,7 @@ div img {
   gap: 20px;
 
 }
-.left {
-  display: flex;
-  flex-direction: column;
-}
-
+.left,
 .right {
   display: flex;
   flex-direction: column;
@@ -67,8 +64,4 @@ div img {
 
 .ingredients-container {
   background-color: #F2EBD5;
-}
-
-.back-to-menu-link {
-  text-align: center;
 }
