@@ -2,16 +2,31 @@
 color codes: #73455A, #F2EBD5, #372006
 */
 
-html {
+* {
   font-family: "Courier New", "Geneva", "Tahoma", sans-serif;
+}
+
+.header {
+  display: flex;
+  border-bottom: 4px double #73455A;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px;
+}
+
+.date {
+  margin-left: 100px;
+}
+
+.about {
+  margin-right: 100px;
+  margin-left: 50px;
 }
 
 #logo {
   width: 100px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  height: auto;
+  margin: auto;
 }
 
 .heading {
