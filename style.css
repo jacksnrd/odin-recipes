@@ -2,10 +2,10 @@
 color codes: #73455A, #F2EBD5, #372006
 */
 
-body {
+/* body {
   max-width: 90vw;
   margin: auto;
-}
+} */
 
 * {
   font-family: "Courier New", "Geneva", "Tahoma", monospace;
@@ -18,44 +18,32 @@ body {
 
 .header {
   display: flex;
+  flex: 1;
   height: 120px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
+#logo,
+.about,
 .date {
-  margin-left: 100px;
+  width: 120px;
+  height: auto;
 }
 
-.about {
-  margin-right: 100px;
-  margin-left: 50px;
-}
-
-#logo {
+.header #logo {
   width: 100px;
   height: auto;
-  margin: auto;
 }
 
-.heading {
-  font-family: cursive, sans-serif;
-  font-size: 48px;
-  font-weight: 100;
-  margin: 0.67em;
-}
-
-.heading,
 .page-title,
-.page-title
 .back-to-menu-link {
   text-align: center;
 }
 
 .back-to-menu-link{
-  display: flex;
-  margin-bottom: 2em;
-  justify-content: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .page-title {
@@ -88,22 +76,28 @@ div img {
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex: 1;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.left{
-  width: 400px;
+.left {
+  max-width: 400px;
+}
+
+.right {
+  flex: 0 0 50vw;
+  min-width: 400px;
 }
 
 .left,
 .right {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
+  margin: 20px;
   gap: 20px;
-  flex: auto;
-  align-items: center;
 }
 
 .about-section,
